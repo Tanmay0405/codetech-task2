@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("weh.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease;
+}
+
+#app {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.weather-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.weather-input input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    transition: border-color 0.3s ease;
+}
+
+.weather-input input:focus {
+    border-color: #6200ea;
+    outline: none;
+}
+
+.weather-input button {
+    padding: 10px;
+    border: none;
+    background: linear-gradient(135deg, #6200ea, #3700b3);
+    color: white;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.weather-input button:hover {
+    background: linear-gradient(135deg, #3700b3, #6200ea);
+}
+
+#weather-result {
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
